@@ -1,0 +1,60 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        //input func
+        Scanner percent = new Scanner(System.in);
+//Input
+        //Maths
+        System.out.print("Enter full marks of Maths - ");
+        int FMath = percent.nextInt();
+        System.out.print("Enter marks you got in Maths - ");
+        int Math = percent.nextInt();
+
+        //English
+        System.out.print("Enter full marks of FEnglish - ");
+        int FEnglish = percent.nextInt();
+        System.out.print("Enter marks you got in English - ");
+        int English = percent.nextInt();
+
+        //Science
+        System.out.print("Enter full marks of Science - ");
+        int FScience = percent.nextInt();
+        System.out.print("Enter marks you got in Science - ");
+        int Science = percent.nextInt();
+
+        //Hindi
+        System.out.print("Enter full marks of Hindi - ");
+        int FHindi = percent.nextInt();
+        System.out.print("Enter marks you got in Hindi - ");
+        int Hindi = percent.nextInt();
+
+        //History
+        System.out.print("Enter full marks of History - ");
+        int FHistory = percent.nextInt();
+        System.out.print("Enter marks you got in History - ");
+        int History = percent.nextInt();
+
+    //Percent calculor
+        //Add
+        float fullMark = (FMath+FEnglish+FScience+FHindi+FHistory);
+        float totalMark = (Math+English+Science+Hindi+History);
+
+        //Divide
+        float percentM = (float) (totalMark/fullMark);
+
+        //Multiply
+        float finalProduct = (float) (percentM*100);
+
+        //Float to int typecasting
+        int percentOfMarks = (int)(finalProduct);
+
+// Heres your Answer (Percentage)
+        //(*lineSpace*)(percent =)('percent')(%)
+        System.out.println();
+        System.out.print("Percent = ");
+        System.out.print(percentOfMarks); //print percent
+        System.out.println("%");
+
+    }
+}
